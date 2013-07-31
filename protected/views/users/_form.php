@@ -35,13 +35,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
+		<?php echo $form->dropDownList($model,'role', CHtml::listData(UsersStatus::model()->findAll(), 'statusId', 'statusName')); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'role'); ?>
-		<?php echo $form->textField($model,'role'); ?>
+		<?php echo $form->dropDownList($model,'role', CHtml::listData(UsersRole::model()->findAll(), 'roleId', 'roleName')); ?>
 		<?php echo $form->error($model,'role'); ?>
 	</div>
 

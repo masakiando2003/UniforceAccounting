@@ -6,3 +6,44 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/UniforceAccounting/index.php?r=gii
 ---
+2013/07/31 17:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "accounts".' in /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CController.php:483
+Stack trace:
+#0 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CController.php(270): CController->missingAction('accounts')
+#1 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(282): CController->run('accounts')
+#2 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(141): CWebApplication->runController('site/accounts')
+#3 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/UniforceAccounting/index.php/site/accounts
+HTTP_REFERER=http://erp.ucrm.uniforce.net/UniforceAccounting/index.php/site/index
+---
+2013/07/31 17:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "usersRole".' in /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CController.php:483
+Stack trace:
+#0 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CController.php(270): CController->missingAction('usersRole')
+#1 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(282): CController->run('usersRole')
+#2 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(141): CWebApplication->runController('site/usersRole')
+#3 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/UniforceAccounting/index.php/site/usersRole
+---
+2013/07/31 17:32:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "UsersRole".' in /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CController.php:483
+Stack trace:
+#0 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CController.php(270): CController->missingAction('UsersRole')
+#1 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(282): CController->run('UsersRole')
+#2 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(141): CWebApplication->runController('site/UsersRole')
+#3 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/UniforceAccounting/index.php/site/UsersRole
+---
+2013/07/31 17:32:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CController.php:483
+Stack trace:
+#0 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CController.php(270): CController->missingAction('users')
+#1 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(282): CController->run('users')
+#2 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(141): CWebApplication->runController('site/users')
+#3 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/UniforceAccounting/index.php/site/users
+---
