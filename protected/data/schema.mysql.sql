@@ -3,7 +3,7 @@ CREATE TABLE users (
     userName VARCHAR(128) NOT NULL,
     password VARCHAR(128) NOT NULL,
     email VARCHAR(128) NOT NULL,
-    status TINY_INT(1) NOT NULL,
+    status TINYINT(1) NOT NULL,
     role   INT(2) NOT NULL
 );
 
@@ -25,8 +25,8 @@ CREATE TABLE users_status (
     statusName VARCHAR(128) NOT NULL
 );
 
-INSERT INTO users_role (statusName) VALUES ('Active');
-INSERT INTO users_role (statusName) VALUES ('Inactive');
+INSERT INTO users_status (statusName) VALUES ('Active');
+INSERT INTO users_status (statusName) VALUES ('Inactive');
 
 CREATE TABLE accounts (
     accountId INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -47,7 +47,7 @@ CREATE TABLE accounts (
     modifiedTime DATETIME NOT NULL
 );
 
-INSERT INTO accounts (name, phone, fax, website, industry, accountType, billingAddress, billingCountry, shippingAddress, shippingCountry) VALUES ('BriteStone Ltd', '+852 2410 4112', '+852 2709 3326', 'www.britestone.com.hk', '31', '3', '2', '5/F., Chinabest Industrial Centre, No.8, Kwai On Road, Kwai Chung', 'Hong Kong', '5/F., Chinabest Industrial Centre, No.8, Kwai On Road, Kwai Chung', 'Hong Kong');
+INSERT INTO accounts (name, phone, fax, website, industry, accountType, rating, billingAddress, billingCountry, shippingAddress, shippingCountry) VALUES ('BriteStone Ltd', '+852 2410 4112', '+852 2709 3326', 'www.britestone.com.hk', '31', '3', '2', '5/F., Chinabest Industrial Centre, No.8, Kwai On Road, Kwai Chung', 'Hong Kong', '5/F., Chinabest Industrial Centre, No.8, Kwai On Road, Kwai Chung', 'Hong Kong');
 
 CREATE TABLE accountsIndustry (
     industryId INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -116,7 +116,7 @@ INSERT INTO accountsRating (ratingId) VALUES ('Shutdown');
 
 CREATE TABLE products (
     productId INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    status TINYINY(1) NOT NULL,
+    status TINYINT(1) NOT NULL,
     category INT(3) NOT NULL,
     unitPrice DECIMAL(8,2) NOT NULL,
     stockQty INTEGER NOT NULL,
@@ -153,7 +153,7 @@ CREATE TABLE salesOrder (
     billingAddress TEXT,
     billingCountry VARCHAR(80),
     shippingAddress TEXT,
-    shippingAddress VARCHAR(80),
+    shippingCountry VARCHAR(80),
     termsConditions TEXT,
     description TEXT,
     createdTime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -167,7 +167,7 @@ CREATE TABLE salesOrderProduct (
     productDescription TEXT,
     qty INTEGER NOT NULL,
     listPrice INTEGER NOT NULL,
-    tax INTEGER NOT NULL,
+    tax INTEGER NOT NULL
 );
 
 CREATE TABLE salesInvoice (
@@ -183,7 +183,7 @@ CREATE TABLE salesInvoice (
     billingAddress TEXT,
     billingCountry VARCHAR(80),
     shippingAddress TEXT,
-    shippingAddress VARCHAR(80),
+    shippingCountry VARCHAR(80),
     termsConditions TEXT,
     description TEXT,
     createdTime TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -197,5 +197,5 @@ CREATE TABLE salesInvoiceProduct (
     productDescription TEXT,
     qty INTEGER NOT NULL,
     listPrice INTEGER NOT NULL,
-    tax INTEGER NOT NULL,
+    tax INTEGER NOT NULL
 );
