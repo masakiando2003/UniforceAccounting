@@ -107,12 +107,12 @@ CREATE TABLE accountsRating (
     ratingName VARCHAR(80) NOT NULL
 );
 
-INSERT INTO accountsRating (ratingId) VALUES ('--None--');
-INSERT INTO accountsRating (ratingId) VALUES ('Acquired');
-INSERT INTO accountsRating (ratingId) VALUES ('Active');
-INSERT INTO accountsRating (ratingId) VALUES ('Market Failed');
-INSERT INTO accountsRating (ratingId) VALUES ('Project Canceled');
-INSERT INTO accountsRating (ratingId) VALUES ('Shutdown');
+INSERT INTO accountsRating (ratingName) VALUES ('--None--');
+INSERT INTO accountsRating (ratingName) VALUES ('Acquired');
+INSERT INTO accountsRating (ratingName) VALUES ('Active');
+INSERT INTO accountsRating (ratingName) VALUES ('Market Failed');
+INSERT INTO accountsRating (ratingName) VALUES ('Project Canceled');
+INSERT INTO accountsRating (ratingName) VALUES ('Shutdown');
 
 CREATE TABLE products (
     productId INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
