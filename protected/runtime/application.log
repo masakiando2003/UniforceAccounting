@@ -1,0 +1,8 @@
+2013/07/31 14:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#1 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /home/ucrm/domains/erp.ucrm.uniforce.net/public_html/UniforceAccounting/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/UniforceAccounting/index.php?r=gii
+---
