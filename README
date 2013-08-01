@@ -2,8 +2,16 @@ Git repository information of http://erp.ucrm.uniforce.net/UniforceAccounting/
 
 Author:Raymond Yeung
 Date: 2013-07-30
-Version: 1.0
+Version: 1.1
 
 Version 1.0 (2013-07-30):
 1. Create Yii web application called "UniforceAccounting"
-2. Created tables called "Users", "User Status", "SalesOrder", "SalesInvoice"
+2. Created tables called "Users", "UserStatus", "SalesOrder", "SalesInvoice"
+3. Generated Model and CRUS of the above tables
+
+Version 1.1 (2013-07-31):
+1. Renamed the name of the tables: "Users"->"users", "UserStatus"->"user_status" and re-generate Model and CRUD of them
+2. Created tabled called "users_role", "accounts", "accountsIndustry", "accountsType", "accountsRating", 
+   "products", "productsStatus", "productsCategory", "salesOrder", "salesOrderProduct", "salesInvoice", "salesInvoiceProduct"
+3. Generated Model and CRUS of the tables stated in 2.
+4. Modified some of the codes in update form to have selection list (e.g. user role field in "Users" table)
